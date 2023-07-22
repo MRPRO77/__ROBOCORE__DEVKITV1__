@@ -1,18 +1,60 @@
-#include <Arduino.h>
+/*******************************************************************************
+   Título:      TCC  Engenharia Mecatrônica.
 
-// put function declarations here:
-int myFunction(int, int);
+   Descrição:   C L P   ---  I H M
+
+   Processador: ROBOCORE  DEVKIV1
+   
+
+
+   Desenvolvido: MRPRO Tecnologia e Automação
+
+   Autor: Tecnologo. Marcelo Rodrigues     Crea
+
+   Data de Inicio: 21/07/2023     Versão:   2023.1.1
+
+   
+
+   Nome do Arquivo:
+
+  
+*******************************************************************************/  
+/* ============================================================================  
+                                                              
+                                       _                      
+                                      / \                     
+                                     |oo >                    
+                                     _\=/_                    
+                    ___         #   /  _  \   #               
+                   /<> \         \\//|/.\|\\//                
+                 _|_____|_        \/  \_/  \/                 
+                | | === | |          |\ /|                    
+                |_|  0  |_|          \_ _/                    
+                 ||  0  ||           | | |                    
+                 ||__*__||           | | |                    
+                |* \___/ *|          []|[]                    
+                /=\ /=\ /=\          | | |                    
+________________[_]_[_]_[_]_________/_]_[_\_____________________________________
+                                                                             
+==============================================================================*/                                                               
+
+
+/******************************************************************************/
+ 
+ #include "Config_ESP32.h" 
+
+
+
+
 
 void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+
+ config_mcu(); 
+  
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-}
 
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
+   teste_LED();
+
 }
